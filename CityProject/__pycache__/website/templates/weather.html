@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static/main.css') }}">
+</head>
+
+<body style="background-color:slategrey;">
+    <h1>Welcome to City Weather App</h1><br>
+    <form action="/city" method="POST" style="text-align:center">
+        <label for="city_name" style="font-size: 30px; " >City Name:</label>
+        <input type="text" id="city_name" name="city_name" placeholder="Enter city name" style="height: 40px; width: 500px;">
+        <br>
+        <br>
+        <input type="submit" style="font-size: 20px; ">
+    </form>
+    <div class="previous" style="background-color: #919292;
+    top:80px;
+    color: white;
+    align-items: right;
+    font-size: 25px;
+    margin-left: 70%;
+    margin: 10 px;
+    padding: 10px;
+    position:center;
+    right:60%;
+    float: right;" >
+              <a href="{{ url_for('views.home') }}">Retun </a>
+              </div>
+</body>
